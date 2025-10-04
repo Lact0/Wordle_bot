@@ -1,8 +1,8 @@
 
-words: list[str] = []
-with open('words', 'r') as file:
+nyt_words: list[str] = []
+with open('words/wordle_inputs.txt', 'r') as file:
     for line in file:
-        words.append(line.strip())
+        nyt_words.append(line.strip())
 
 Color = int
 Coloring = tuple[Color, Color, Color, Color, Color]
